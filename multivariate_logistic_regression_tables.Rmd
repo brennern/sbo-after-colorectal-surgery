@@ -1,0 +1,28 @@
+---
+title: "Multivariate Logistic Regression Tables"
+output: html_document
+date: "2025-02-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(targets)
+library(tidyverse)
+library(gtsummary)
+library(readr)
+library(stringr)
+```
+
+# Multivariate Logistic Regression Analysis: REOP
+
+```{r}
+tar_read(multivariate_reop_211_tbl)
+```
+
+# Multivariate Logistic Regression Analysis: READM
+
+```{r}
+tar_read(multivariate_readm_211)
+```
+
+

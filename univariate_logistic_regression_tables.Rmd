@@ -1,0 +1,30 @@
+---
+title: "Univariate Logistic Regression Tables"
+output: html_document
+date: "2025-02-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(targets)
+library(tidyverse)
+library(gtsummary)
+library(readr)
+library(stringr)
+```
+
+# Full Univariate Logistic Regression Analysis for 2022 and 2023 Data: REOP
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+tar_read(univariate_211_reop)
+```
+
+# Full Univariate Logistic Regression Analysis for 2022 and 2023 Data: READM
+
+```{r}
+tar_read(univariate_211_readm)
+```
+
+
+
+

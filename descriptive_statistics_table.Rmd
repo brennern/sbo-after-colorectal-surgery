@@ -1,0 +1,24 @@
+---
+title: "Descriptive Statistics Table"
+output: html_document
+date: "2025-02-24"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(targets)
+library(tidyverse)
+library(gtsummary)
+library(readr)
+library(stringr)
+```
+
+## 2022 and 2023 Descriptive Statistics Table
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+tar_read(merged_table)
+```
+
+
+
+
